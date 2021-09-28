@@ -1,0 +1,114 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+header{
+    background: linear-gradient(to top, #e6933f -29%, #ffd081 86%);
+    line-height: 15vh;
+}
+h1{
+    font-family: cursive;
+    text-align: center;
+    color: white;
+    font-size: 1.8rem;
+    letter-spacing: 15px;
+    text-transform: uppercase;
+}
+.msg {
+    text-align: center;
+    font-size: 24px;
+    color: #ff6a00;
+    font-family: cursive;
+    text-transform: uppercase;
+}
+.container{
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../Guess\ the\ word/imgs/img7.jpg);   
+}
+.gameArea{
+    width: 50%;
+    height: 400px;
+    padding: 20px 0;
+    background-color: #e6943f7d;
+    display: flex;
+    align-items: center ;
+    justify-content: center; 
+    flex-direction: column;
+}
+input{
+    width: 40%;
+    padding: 15px 0;
+    text-align: center;
+    border-radius: 25px;
+    outline: none;
+    border: none;
+    background-color: #dff9fb;
+    color: black;
+    margin: 2rem 0;
+    font-size: 1.1rem;
+}
+button{
+    font-size: 1rem;
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+    margin-top: 10px;
+    color: #ff6a00;
+    border: none;
+    font-family: cursive;
+}
+button.btn{
+    font-weight: 600;
+    padding: 1rem 2rem;
+    background: white;
+    text-transform: uppercase;
+    border-radius: 40px;
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier(0.65, -0.25, 0.25, 1.95);
+}
+
+button.btn:hover, button.btn:focus, button.btn:active{
+    letter-spacing: 0.125rem;
+    word-spacing: 0.2rem;
+}
+.hidden{
+    display: none;
+}
+@media(max-width:998px){
+header{
+    line-height: 7vh;
+}
+h1 {
+    font-size: 20px;
+}
+.container {
+    height: 70vh;
+}
+.gameArea {
+    width: 85%;
+    height: 255px;
+    padding: 15px 0;
+}
+.msg {
+    font-size: 15px;
+    font-family: cursive;
+    text-transform: uppercase;
+    text-align: center;
+}
+input {
+    width: 78%;
+    padding: 10px 0;
+    text-align: center;
+    margin: 1rem 0;
+    font-size: 1.1rem;
+}   
+button {
+    font-size: 1rem;
+    margin-top: 5px; 
+}
+}
