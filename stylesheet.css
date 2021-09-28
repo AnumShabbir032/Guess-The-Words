@@ -27,7 +27,7 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url(../Guess\ the\ word/imgs/imgaa7.jpg);  
+    /* background: url(../Guess\ the\ word/imgs/imgaa7.jpg);   */
     background-color: #ffc671; 
 }
 .gameArea{
