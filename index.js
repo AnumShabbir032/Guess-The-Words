@@ -7,7 +7,7 @@ let randWords = "";
 let nWords = ['australia', 'helicopter', 'rainbow', 'army', 'queen', 'piano', 'candle', 'kangaroo', 'scooter', 'magazine', 'eggplant', 'orange', 'flower', 'family', 'dream' ];
  
 const newWords = () => {
-    let randomNum = Math.floor(Math.random() * nWords.length) + 1
+    let randomNum = Math.floor(Math.random() * nWords.length) + 1;
     let actNwords = nWords[randomNum];
     return actNwords;
 }
@@ -29,7 +29,7 @@ btn.addEventListener('click', function () {
         play = true;
         btn.innerHTML = "Guess";
         guess.classList.toggle('hidden');
-        words = newWords();
+        words = newWords()
         randWords = scrambleWords(words.split("")).join("");
         msg.innerHTML = `Guess the Word: ${randWords}`;
     }else{
