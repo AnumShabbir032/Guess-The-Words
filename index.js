@@ -28,7 +28,7 @@ btn.addEventListener('click', function () {
         play = true;
         btn.innerHTML = "Guess";
         guess.classList.toggle('hidden');
-        words = newWords()
+        words = newWords();
         randWords = scrambleWords(words.split("")).join("");
         msg.innerHTML = `Guess the Word: ${randWords}`;
     }else{
